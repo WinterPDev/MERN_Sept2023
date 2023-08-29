@@ -243,3 +243,7 @@ foo ?
 
 
 // Where to find more bonus operations in JS: https://blog.logrocket.com/javascript-typescript-shorthands/
+
+
+a = [];
+console.log(a);
