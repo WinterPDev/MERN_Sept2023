@@ -36,6 +36,20 @@ const expected = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
  * @param {Array<number>} numbers
  * @returns {Array<number>} The given array after being sorted.
  */
-function selectionSort(numbers = []) { }
+
+// Source: Daniel Gray
+function selectionSort(numbers = []) {
+    for (i = 0; i < numbers.length - 1; i++) {
+        let min = i;
+        for (j = i + 1; j < numbers.length; j++) {
+            if (numbers[j] < numbers[min]) {
+                min = j;
+            }
+        }
+        [numbers[i], numbers[min]] = [numbers[min], numbers[i]];
+    }
+    return numbers
+}
+
 
 /*****************************************************************************/

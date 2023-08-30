@@ -49,6 +49,19 @@ const expected = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
  * @param {Array<number>} numbers
  * @returns {Array<number>} The given array after being sorted.
  */
-function insertionSort(numbers = []) { }
+
+// Source: Daniel Gray
+function insertionSort(numbers = []) {
+    for (i = 1; i < numbers.length; i++) {
+        if (numbers[i] < numbers[i - 1]) {
+            for (j = i; j > 0; j--) {
+                if (numbers[j] < numbers[j - 1]) {
+                    [numbers[j], numbers[j - 1]] = [numbers[j - 1], numbers[j]]
+                }
+            }
+        }
+    }
+    return numbers
+}
 
 /*****************************************************************************/
