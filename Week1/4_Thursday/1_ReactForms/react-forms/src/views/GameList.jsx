@@ -47,7 +47,24 @@ const GameList = () => {
 
                 </form>
 
+
+
+
+
+
+
+
+
+
                 <FormDisplayComponent title={title} year={year} />
+
+
+
+
+
+
+
+
 
             </fieldset>
 

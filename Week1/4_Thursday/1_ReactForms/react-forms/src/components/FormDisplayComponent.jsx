@@ -1,6 +1,7 @@
 import React from 'react';
 
 const FormDisplayComponent = (props) => {
+    console.log(props);
     return (
         <fieldset>
             <legend>FormDisplayComponent.jsx</legend>
